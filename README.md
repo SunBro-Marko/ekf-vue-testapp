@@ -1,5 +1,7 @@
 # ekf-vue-testapp
 
+Данный проект выполнен как тестовое задание для компании EKF https://ekfgroup.com/
+
 ## Project setup
 ```
 npm install
