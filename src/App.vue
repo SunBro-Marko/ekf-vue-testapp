@@ -3,7 +3,7 @@
     <h1>Тестовое задание для компании EKF</h1>
     <h3 class="mb-5">Михаил Алёнин 'sunbro.marko@yandex.ru'</h3>
     <div class="row">
-      <div class="col"><vtable :action="action" v-bind:items="prices"></vtable></div>
+      <div class="col"><vtable v-if="!$apollo.loading" :action="action" v-bind:items="prices"></vtable></div>
       <div class="col">
         <changeForm v-if="changeFormActive" v-bind:item="changedItem" v-bind:action="updateProductByID" />
       </div>
@@ -90,7 +90,7 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-td{
-   cursor: pointer
+td {
+  cursor: pointer;
 }
 </style>
